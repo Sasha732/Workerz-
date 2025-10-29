@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workerz Prototype</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo/logo white.png" alt="Logo" class="logo-img" />
+        </a>
+
+        <!-- Hamburger Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Nav Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slider Container -->
+    <div class="slider position-relative">
+      <!-- Slide 1 -->
+      <div
+        class="slide active"
+        style="background-image: url('https://picsum.photos/1600/900?random=1')"
+      >
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <div class="slide-content text-white">
+            <h1 class="headline glow-text pop-up-text">WORKERZ</h1>
+            <p class="subtitle glow-subtext">WHERE HARD WORK NEVER SLEEPS</p>
+            <a href="index.html" class="btn btn-secondary btn-lg mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div
+        class="slide"
+        style="background-image: url('https://picsum.photos/1600/900?random=2')"
+      >
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <div class="slide-content text-white">
+            <h1 class="headline glow-text">Transform Ideas Into Reality</h1>
+            <p class="subtitle glow-subtext">
+              Empowering innovation through global expertise.
+            </p>
+            <a href="about.html" class="btn btn-secondary btn-lg mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div
+        class="slide"
+        style="background-image: url('https://picsum.photos/1600/900?random=3')"
+      >
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <div class="slide-content text-white">
+            <h1 class="headline glow-text">Partner With Us</h1>
+            <p class="subtitle glow-subtext">
+              Your trusted outsourcing partner for long-term success.
+            </p>
+            <a href="contact.html" class="btn btn-secondary btn-lg mt-3">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4 text-white glow-text pop-up-text">Join Our Team</h2>
+
+        <div class="position-relative">
+          <!-- Backward Button -->
+          <button class="slider-btn prev-btn">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <!-- Card Slider Wrapper -->
+          <div class="d-flex overflow-hidden" id="cardSlider">
+            <!-- Cards Row -->
+            <div class="d-flex flex-nowrap" id="cardTrack">
+              <!-- Card 1 -->
+              <div class="card service-card me-3">
+                <img src="assets/user2.png" class="person-img" alt="Person" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">CSR</h5>
+                  <p class="card-text text-light">
+                    Handles customer queries and resolves issues while
+                    delivering quality support and service.
+                  </p>
+                  <a href="contact.html" class="btn btn-secondary">Join Us</a>
+
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="card service-card me-3">
+                <img src="assets/user2.png" class="person-img" alt="Person" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Self Verifier</h5>
+                  <p class="card-text text-light">
+                    Verifies customer interactions and documentation to ensure
+                    accuracy, compliance, and quality standards.
+                  </p>
+                  <a href="contact.html" class="btn btn-secondary">Join Us</a>
+
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="card service-card me-3">
+                <img src="assets/user2.png" class="person-img" alt="Person" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Senior Closer</h5>
+                  <p class="card-text text-light">
+                    At least 2 years of experience, coordinate teams, and ensure
+                    timely delivery of milestones.
+                  </p>
+                  <a href="contact.html" class="btn btn-secondary">Join Us</a>
+
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="card service-card me-3">
+                <img src="assets/user2.png" class="person-img" alt="Person" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Marketing Specialist</h5>
+                  <p class="card-text text-light">
+                    Plan campaigns, manage branding, and connect with the target
+                    audience.
+                  </p>
+                 <a href="contact.html" class="btn btn-secondary">Join Us</a>
+
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="card service-card me-3">
+                <img src="assets/user2.png" class="person-img" alt="Person" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Team Lead</h5>
+                  <p class="card-text text-light">
+                    Lead small teams, mentor juniors, and ensure performance
+                    targets are met.
+                  </p>
+                  <a href="contact.html" class="btn btn-secondary">Join Us</a>
+
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="card service-card me-3">
+                <img src="assets/user2.png" class="person-img" alt="Person" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">HR Specialist</h5>
+                  <p class="card-text text-light">
+                    Manages hiring, and employee well-being while ensuring
+                    compliance and fostering a positive workplace.
+                  </p>
+                 <a href="contact.html" class="btn btn-secondary">Join Us</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forward Button -->
+          <button class="slider-btn next-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-white glow-text pop-up-text">What We Offer</h2>
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="service-box"
+              style="--bg-img: url('https://picsum.photos/600/400?random=21')"
+            >
+              <div class="content">
+                <div class="icon"><i class="bi bi-headset"></i></div>
+                <h5>Customer Support</h5>
+                <p>
+                  Professional support solutions designed to deliver quick,
+                  accurate responses for your clients.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="service-box"
+              style="--bg-img: url('https://picsum.photos/600/400?random=22')"
+            >
+              <div class="content">
+                <div class="icon"><i class="bi bi-cpu"></i></div>
+                <h5>Technology Solutions</h5>
+                <p>
+                  Reliable and adaptive IT services that keep your business
+                  running efficiently and securely.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="service-box"
+              style="--bg-img: url('https://picsum.photos/600/400?random=23')"
+            >
+              <div class="content">
+                <div class="icon"><i class="bi bi-people"></i></div>
+                <h5>Client Acquisition</h5>
+                <p>
+                  Helping you connect with the right audience through smart
+                  strategies and targeted outreach.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-6">
+            <div
+              class="service-box"
+              style="--bg-img: url('https://picsum.photos/600/400?random=24')"
+            >
+              <div class="content">
+                <div class="icon"><i class="bi bi-graph-up"></i></div>
+                <h5>Strategy & Advisory</h5>
+                <p>
+                  Guiding your business with insights and analysis to make
+                  confident, growth-focused decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 col-lg-6">
+            <div
+              class="service-box"
+              style="--bg-img: url('https://picsum.photos/600/400?random=25')"
+            >
+              <div class="content">
+                <div class="icon"><i class="bi bi-briefcase"></i></div>
+                <h5>Talent & Staffing</h5>
+                <p>
+                  Offering adaptable workforce solutions that grow with your
+                  business needs and objectives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Annual Trip Section -->
+    <section id="annual-trip" class="py-5">
+      <div class="container">
+        <h2 class="text-center text-white mb-4 glow-text pop-up-text">Annual Trip 2025</h2>
+        <p class="text-center text-light mb-5 glow-subtext ">
+          A memorable journey filled with laughter, adventure and team spirit.
+          Relive the best moments!
+        </p>
+
+        <!-- Image Gallery -->
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="trip-card">
+              <img
+                src="/assets/annualtrip/ANN.jfif"
+                alt="Beach Trip"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="trip-card">
+              <img
+                src="assets/annualtrip/AN2.jpg"
+                alt="Mountain Trip"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="trip-card">
+              <img
+                src="assets/annualtrip/AN3.jpg"
+                alt="Team Adventure"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="trip-card">
+              <img
+                src="assets/annualtrip/AN4.jpg"
+                alt="Forest Trip"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="trip-card">
+              <img
+                src="assets/annualtrip/AN5.jpg"
+                alt="Hiking Friends"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="trip-card">
+              <img
+                src="assets/annualtrip/AN6.jpg"
+                alt="Group Travel"
+                class="img-fluid gallery-img"
+              />
+            </div>
+          </div>
+        </div>
+
+      <div class="text-center mt-5">
+  <a href="gallery.html" class="custom-gallery-btn">View Full Gallery</a>
+</div>
+
+    </section>
+
+    <!-- Lightbox Modal (Bootstrap) -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark">
+          <div class="modal-body p-0 text-center">
+            <button
+              type="button"
+              class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <img
+              id="lightboxImage"
+              src=""
+              alt=""
+              class="img-fluid w-100"
+              style="max-height: 85vh; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Campaigns Section -->
+    <section id="campaigns" class="py-5">
+      <div class="container">
+        <h2 class="text-center text-white mb-3 glow-text pop-up-text">Our Campaigns</h2>
+        <p class="text-center text-light mb-5 glow-subtext">
+          We specialize in running targeted campaigns tailored to meet the needs
+          of diverse industries.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- ACA -->
+          <div class="col-md-4 col-sm-6">
+            <div class="campaign-card">
+              <img
+                src="/assets/campaigns/aca.jpg"
+                alt="ACA Campaign"
+                class="img-fluid campaign-img"
+              />
+              <div class="campaign-overlay">
+                <h5 class="mb-0">ACA</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medicare -->
+          <div class="col-md-4 col-sm-6">
+            <div class="campaign-card">
+              <img
+                src="/assets/campaigns/medicare.jpg"
+                alt="Medicare Campaign"
+                class="img-fluid campaign-img"
+              />
+              <div class="campaign-overlay">
+                <h5 class="mb-0">Medicare</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Auto Insurance -->
+          <div class="col-md-4 col-sm-6">
+            <div class="campaign-card">
+              <img
+                src="/assets/campaigns/auto.jpg"
+                alt="Auto Insurance Campaign"
+                class="img-fluid campaign-img"
+              />
+              <div class="campaign-overlay">
+                <h5 class="mb-0">Auto Insurance</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- U65 Campaign -->
+          <div class="col-md-4 col-sm-6">
+            <div class="campaign-card">
+              <img
+                src="/assets/campaigns/U65.jpg"
+                alt="Solar Campaign"
+                class="img-fluid campaign-img"
+              />
+              <div class="campaign-overlay">
+                <h5 class="mb-0">Under 65 Act</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Expense -->
+          <div class="col-md-4 col-sm-6">
+            <div class="campaign-card">
+              <img
+                src="/assets/campaigns/FE.jpg"
+                alt="Debt Relief Campaign"
+                class="img-fluid campaign-img"
+              />
+              <div class="campaign-overlay">
+                <h5 class="mb-0">Final Expense</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Heading -->
+    <h2 class="text-white text-center section-heading glow-text pop-up-text">Why Choose Us</h2>
+
+    <!-- Best Call Center Box -->
+    <section id="best-callcenter" class="d-flex justify-content-center">
+      <div class="content-box text-center">
+        <h3>More Than Just a Workplace — A Place to Grow</h3>
+        <p>
+          We don’t just offer jobs, we build careers. With
+          <strong>attractive salary packages</strong>, performance-based
+          <strong>bonuses</strong>, and a friendly, supportive environment, our
+          team members thrive while achieving their professional goals.
+        </p>
+        <p>
+          Join us and experience the difference of working at a company that
+          values your <strong>efforts, rewards your talent</strong>, and ensures
+          a <strong>bright future</strong> ahead.
+        </p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+    <!-- Recognizing Our Top Performers Section -->
+    <section id="top-performers" class="py-5">
+      <div class="container text-center">
+        <h2 class="text-white mb-3 glow-text pop-up-text">Recognizing Our Top Performers</h2>
+        <p class="text-light mb-5 glow-subtext">
+          We believe in celebrating dedication and excellence. Our top
+          performers set the bar high with their commitment and results,
+          inspiring the entire team to achieve more.
+        </p>
+
+        <!-- Grid -->
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="performer-card">
+              <img src="assets/TP1.jfif" alt="Performer 1" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="performer-card">
+              <img src="assets/TP2.jfif" alt="Performer 2" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="performer-card">
+              <img src="assets/TP3.jfif" alt="Performer 3" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="performer-card">
+              <img src="assets/TP4.jfif" alt="Performer 4" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="performer-card">
+              <img src="assets/TP5.jfif" alt="Performer 5" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="performer-card">
+              <img src="assets/TP7.jfif" alt="Performer 6" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Dream Job Section -->
+    <section id="dream-job" class="d-flex justify-content-center">
+      <div class="dream-box text-center">
+        <h2>Your Dream Career is Closer Than You Think</h2>
+        <p class="lead">
+          Ready to take the next big step in your career? Join a company that
+          values growth, rewards hard work, and supports your success. Explore
+          our openings and be part of something extraordinary.
+        </p>
+        <a href="contact.html" class="btn btn-outline-light px-4 py-2">Join Our Team</a>
+      </div>
+    </section>
+
+    <!-- Pre-Footer / Company Highlights -->
+    <section id="company-highlights" class="d-flex justify-content-center">
+      <div class="highlights-box text-center">
+        <h2>Empowering People. Inspiring Growth.</h2>
+        <p class="lead">
+          Workerz LLC is more than just a workplace — it’s a family where
+          dedication is valued, achievements are celebrated, and every voice
+          matters. Our commitment is to provide an environment where our team
+          and clients thrive together.
+        </p>
+
+        <!-- Social Links -->
+        <div class="social-icons mb-4">
+          <a
+            href="https://www.facebook.com/workerzllc/"
+            target="_blank"
+            class="social"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="https://pk.linkedin.com/company/workerzllc"
+            target="_blank"
+            class="social"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/workerzllc/"
+            target="_blank"
+            class="social"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+        <!-- Location -->
+        <div class="location">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span
+            >Office no 3-4 3rd Floor, Elite plaza, Saddar, Rawalpindi,
+            46000</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <img src="assets/logo/workerz logo white.png" alt="Company Logo" class="footer-logo" />
+          <p>
+            At Workerz LLC, we combine innovation, dedication, and expertise to
+            deliver business solutions that drive real impact. Our goal is to
+            create an environment where both our clients and teams can grow and
+            succeed together.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="footer-right">
+          <h4>Head Office Address</h4>
+          <p>Office no 3-4 3rd Floor, Elite plaza, Saddar, Rawalpindi, 46000</p>
+          <p><i class="fas fa-envelope"></i> recruitment@workerzllc.org</p>
+          <p><i class="fas fa-phone"></i>0334 5051057</p>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <p>©2025 ALL RIGHTS RESERVED - WORKERZ LLC</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
